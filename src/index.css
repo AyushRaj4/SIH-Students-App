@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+/*16px*/
+
+:root {
+  /* colors */
+  --primary-100: #e2e0ff;
+  --primary-200: #c1beff;
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+  --primary-500: #645cff;
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+  --primary-800: #282566;
+  --primary-900: #141233;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  background-color: #fff0f5;
+  /* background-color: var(--backgroundColor); */
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 5rem;
+}
+
+.navbar li {
+  color: white;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 2rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.navbar li a {
+  color: white;
+  transition: all 0.5s;
+  font-weight: 100;
+}
+
+.navbar li a:hover {
+  color: #00f7ff;
+}
+
+.left-nav-menu {
+  background-color: #ef2851;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+#li1 {
+  margin-left: 6rem;
+}
+
+.login-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 15rem;
+}
+
+#login {
+  font-size: 1.05rem;
+  font-weight: 800;
+  background: none;
+  border: none;
+  color: #ef2851;
+}
+
+.signup {
+  color: white;
+  margin: 0 2.3rem 0 2.3rem;
+  background-color: #ef2851;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.fa-solid {
+  color: rgb(77, 77, 77);
+  font-size: 1.7rem;
+}
+
+.hero {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 6.2rem;
+  margin-left: 10rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  /* width: 30rem; */
+}
+
+.hero h2 span {
+  color: #ef2851;
+}
+
+.mission {
+  width: 30rem;
+}
+
+.entry-text {
+  color: #787878;
+  /* width: 32rem; */
+  font-weight: 400;
+  font-size: 0.95rem;
+  text-transform: none;
+}
+
+.start-btn {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  margin-right: 1.5rem;
+  border: 1px solid #ef2851;
+}
+
+.hero-btns {
+  margin-top: 1.7rem;
+}
+
+.know-more {
+  background: none;
+  border: 1px solid rgb(146, 146, 146);
+  /* border: none; */
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  color: #ef2851;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.know-more:hover {
+  color: white;
+  background-color: #ef2851;
+  border: none;
+  border-radius: 2rem;
+}
+
+.call-us {
+  margin-top: 3rem;
+}
+
+.round-spans {
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-right: 0.8rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #ef2851;
+}
+
+.call-us h4 span {
+  color: #ef2851;
+  margin-right: 0.5rem;
+}
+
+.students {
+  margin-left: 10rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+.students img {
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 20%;
+}
+
+.roles {
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  display: grid;
+  gap: 2rem;
+}
+
+.role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+}
+
+.role:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.role img {
+  border-bottom: 0.01px solid black;
+  height: 20rem;
+}
+
+.role span {
+  margin: 1rem 0 1rem 0;
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.body2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  padding-top: 5rem;
+}
+
+/* Remove existing square and animation related styles */
+.square,
+.square i {
+  display: none;
+  /* Hide the old square and animations */
+}
+
+/* New styling for the curved rectangular box */
+.curved-rectangle {
+  width: 500px;
+  /* Adjust width as needed */
+  padding: 30px;
+  margin-top: 3.3rem;
+  border-radius: 20px;
+  /* Rounded corners */
+  background: #f0f0f0;
+  /* Light background color */
+  box-shadow: var(--shadow-2)
+    /* Subtle shadow */
+}
+
+.curved-rectangle h2 {
+  font-size: 2em;
+  color: #000000;
+  /* Text color */
+  margin-bottom: 20px;
+}
+
+.curved-rectangle .inputBx {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.curved-rectangle .inputBx input,
+.curved-rectangle .inputBx select {
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #000000;
+  /* Border color */
+  border-radius: 40px;
+  /* Rounded corners */
+  font-size: 1.2em;
+  color: #000000;
+  /* Text color */
+  box-shadow: none;
+  outline: none;
+}
+
+.curved-rectangle .inputBx input[type="submit"] {
+  background: #000000;
+  /* background: linear-gradient(45deg, #00f7ff, #0096ff); */
+  background: #ef2851;
+  /* Gradient background */
+  color: #ffffff;
+  /* Text color */
+  border: none;
+  cursor: pointer;
+  border: #ef2851 solid 1px;
+  transition: var(--transition);
+}
+
+.curved-rectangle .inputBx input[type="submit"]:hover {
+  background-color: white;
+  border: #ef2851 solid 1px;
+  color: black;
+}
+
+.curved-rectangle .inputBx input::placeholder {
+  color: rgba(0, 0, 0, 0.75);
+  /* Placeholder color */
+}
+
+.curved-rectangle .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curved-rectangle .links a {
+  color: #0078ff;
+  /* Link color */
+  text-decoration: none;
+}
+
+/* Navbar styles */
+.admin-header {
+  width: 100%;
+  background-color: #0078ff;
+  /* Blue color for navbar */
+  position: fixed;
+  /* Make it stay at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* Ensure it stays above other elements */
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.1rem;
+  background-color: #ef2851;
+  height: 100%;
+  /* Blue background */
+}
+
+.logo {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-links li:hover {
+  /* padding: 1.25rem 0rem; */
+  background-color: #b91a3a;
+}
+
+.nav-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: var(--transition);
+}
+
+.auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 1em;
+  background-color: #0078ff;
+  /* Blue background */
+  border: 1px solid white;
+}
+
+.auth-links a:hover {
+  background-color: white;
+  color: #0078ff;
+}
+
+.signup-btn {
+  background-color: white;
+  color: #000000;
+}
+
+.signup-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Additional styling for the select box */
+.curved-rectangle .inputBx select {
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #000000;
+  /* Border color */
+  border-radius: 40px;
+  /* Rounded corners */
+  font-size: 1.2em;
+  color: #000000;
+  /* Text color */
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.curved-rectangle .inputBx select option {
+  color: #000000;
+  background-color: white;
+}
+
+/* Styles for the larger square on the register page */
+.register-square {
+  width: 600px;
+  /* Increase the width */
+  height: 650px;
+  /* Increase the height */
+}
+
+@media screen and (min-width: 768px) {
+  .choice {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.navbar2 {
+  height: 4rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-icon {
+  font-size: 2rem;
+  color: rgb(255, 70, 70);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Keyframes for pulsing effect with reduced scale */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    /* Original size */
+  }
+
+  50% {
+    transform: scale(1.3);
+    /* 1.2 times bigger (reduced from 1.5) */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Back to original size */
+  }
+}
